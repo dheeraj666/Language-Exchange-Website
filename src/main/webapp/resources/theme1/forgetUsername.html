@@ -1,0 +1,42 @@
+ <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+									<div class="section-heading text-center">
+												<h2 >Enter Email </h2>
+												<div class="divider-header"></div>
+												 <p>To access site features ...</p>
+									</div>
+	
+							</div>
+							
+							
+						
+	
+		
+		<div class="modal-body">
+         
+         
+         <div class="col-md-12 xs-marginbot-20">
+								<form  name="form-forget "  action="<c:url value='reg' />" method='POST' cammandName="UserForm" >
+								<input type="email" name="email" class="form-control input-lg"  placeholder="Enter your Email " ng-model="user.name"
+	           					ng-required="true" />
+	           					<br>
+								 <p class="error validationerror" ng-show="form-forget.email.$invalid && form-forget.email.$touched">
+	                            You Must Fill Out Your Name.</p>
+							
+							
+							 
+							  <input class="btn btn-primary btn-lg btn-block" ng-disabled="form-forget.$invalid" type="submit" value="Get UserName"/>
+							 </form>
+							 
+					 
+							 
+							 
+							 
+							 
+      
+      </div>
+      <div class="modal-footer">
+         
+	<a href="#/" class="btn btn-primary" >GO Back</a></p>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Abort</button>
+       
+      </div>					

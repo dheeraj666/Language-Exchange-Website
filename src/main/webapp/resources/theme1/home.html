@@ -1,0 +1,143 @@
+
+			<div class="container marginbot-50" ng-controller = "full"   >
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Home</h2>
+					<div class="divider-header"></div>
+					<p>This Information Will Help For English Apprentice ...</p>
+					<div class="container">
+						                    <div class="navbar ">
+		                        <div class="navbar-inner">
+		                           <div class="container tabbable ">	
+											<ul class="nav nav-tabs nav-pills ">
+												<li> <a href="#tab1" data-toggle="tab">Correct It</a></li>
+												<li  ><a href="#tab2" data-toggle="tab">Vocabulary</a></li>
+												<li><a href="#tab3" data-toggle="tab">Vocabulary Groups</a></li>
+												<li><a href="#tab4" data-toggle="tab">Tips</a></li>
+												<li class="active" ><a href="#tab5" data-toggle="tab">Rreading Comprehension</a></li>
+												<li><a href="#tab6" data-toggle="tab"> Idoms/Phrasal Verbs </a></li>
+												
+										   </ul>
+		                           </div>
+		                        </div>
+		                    </div>  
+		            
+
+		  <div class="tab-content">
+                <div class="tab-pane " id="tab1"   >
+				        <div ng-repeat="item in correctme | limitTo: 1 " >			
+						        <p class="pra">                                                                                <strong>                                       {{item.que}} </strong> 
+						        </p>
+						        
+								<hr style="width: 50%" >
+								
+								<p class="pra">
+								    <table > 
+										<tr class="pra" > 
+                                          <td class="for-spacing">A - {{item.ansA}}</td>
+                                          <td class="for-spacing">B - {{item.ansB}}</td>	
+                                         <td class="for-spacing">C - {{item.ansC}} </td>	
+                                         <td class="for-spacing">D - {{item.ansD}}</td>
+                                        </tr>
+                                     </table>
+                                </p>
+                            </div>
+                </div>
+                        
+                    
+               
+                             
+                
+                 <div class="tab-pane " id="tab2"   >
+				        <div ng-repeat="item in vocabSingle | limitTo: 1 " >			
+						        <p class="pra text-uppercase ">                                                                                <strong> {{item.que}}</strong> 
+						        </p>
+						        
+								<hr style="width: 50%" >
+								
+								<p class="pra">
+								    <table > 
+										<tr class="pra" > 
+                                          <td class="for-spacing">{{item.ansA}}</td>
+                                          </tr>
+                                     </table>
+                                </p>
+                            </div>
+                </div>
+                              
+				 
+                 <div class="tab-pane " id="tab3"   >
+				        <div ng-repeat="item in vocabInGroup | limitTo: 1 " >			
+						        <p class="pra text-uppercase ">                                                                                <strong> {{item.que}} TIPS </strong> 
+						        </p>
+						        
+								<hr style="width: 50%" >
+								
+								<p class="pra">
+								    <table > 
+										<tr class="pra" > 
+                                          <td class="for-spacing">A - {{item.ansA}}</td>
+                                          <td class="for-spacing">B - {{item.ansB}}</td>	
+                                         <td class="for-spacing">C - {{item.ansC}} </td>	
+                                         <td class="for-spacing">D - {{item.ansD}}</td>
+                                         <td class="for-spacing">D - {{item.ansE}}</td>
+                                        </tr>
+                                     </table>
+                                </p>
+                            </div>
+                </div>
+                       
+                 <div class="tab-pane " id="tab4"   >
+				        <div ng-repeat="item in tips | limitTo: 1 " >			
+						        <p class="pra text-uppercase ">                                                                                <strong> {{item.que}}</strong> 
+						        </p>
+				         </div>
+                </div>
+                       
+                 <div class="tab-pane active" id="tab5"  >
+				        <div ng-repeat="item in rc | limitTo: 1 " >			
+						        <p class="pra text-uppercase ">                                                                    <strong> {{item.que}}  </strong> 
+                                </p>
+                        </div>
+                </div>
+                       
+                 <div class="tab-pane " id="tab6"  >
+				        <div ng-repeat="item in idioms | limitTo: 1 " >			
+						        <p class="pra text-uppercase ">                                                                                <strong> {{item.que}}</strong> 
+						        </p>
+						        
+								<hr style="width: 50%" >
+								
+								<p class="pra">
+								    <table > 
+										<tr class="pra" > 
+                                          <td class="for-spacing">A - {{item.ansA}}</td>
+                                         </tr>
+                                    </table>
+                                </p>
+                         </div>
+                </div>
+                        
+                				
+   
+									
+									
+								
+							</div>
+					</div> 
+       
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+<br>
+
+
+
+
+
+		</div>
